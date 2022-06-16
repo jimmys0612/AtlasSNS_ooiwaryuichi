@@ -3,7 +3,9 @@
 @section('content')
 
 <div id="clear">
-  <p>〇〇さん</p>
+  <p><?php
+  session_start();
+  ?>さん</p>
   <p>ようこそ！AtlasSNSへ！</p>
   <p>ユーザー登録が完了しました。</p>
   <p>早速ログインをしてみましょう。</p>
