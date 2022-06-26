@@ -22,9 +22,9 @@
 <body>
     <header>
         <div id = "head">
-        <h1><a><img src="images/logo.png"></a></h1>
+        <h1><a href="/top"><img src="images/Atlas.png"></a></h1>
             <div id="">
-                <div id="">
+                <div id="" class="">
                     <p>〇〇さん<img src="images/arrow.png"></p>
                 <div>
                 <ul>
@@ -46,14 +46,14 @@
                 <p>フォロー数</p>
                 <p>〇〇名</p>
                 </div>
-                <p class="btn"><a href="">フォローリスト</a></p>
+                <p class="btn"><a href="/followList">フォローリスト</a></p>
                 <div>
                 <p>フォロワー数</p>
                 <p>〇〇名</p>
                 </div>
-                <p class="btn"><a href="">フォロワーリスト</a></p>
+                <p class="btn"><a href="/followerList">フォロワーリスト</a></p>
             </div>
-            <p class="btn"><a href="">ユーザー検索</a></p>
+            <p class="btn"><a href="/users/search">ユーザー検索</a></p>
         </div>
     </div>
     <footer>
