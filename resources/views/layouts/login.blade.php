@@ -18,20 +18,27 @@
     <!--iphoneのアプリアイコン指定-->
     <link rel="apple-touch-icon-precomposed" href="画像のURL" />
     <!--OGPタグ/twitterカード-->
+    <script src="/public/js/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <div id = "head">
-        <h1><a href="/top"><img src="images/logo.png"></a></h1>
-            <div id="">
-                <div id="" class="">
-                    <p>〇〇さん<img src="images/arrow.png"></p>
+        <h1><a href="/top"><img src="images/Atlas.png"></a></h1>
+            <div id="ac-menu">
+                <div id="title-name">
+                    <p id ="name">〇〇さん<img src="images/arrow.png"></p>
                 <div>
+                <button type="button" class="menu-btn">
+                    <span class="inn"></span>
+                </button>
+                <nav class="menu">
                 <ul>
                     <li><a href="/top">ホーム</a></li>
                     <li><a href="/profile">プロフィール</a></li>
                     <li><a href="/logout">ログアウト</a></li>
                 </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -46,19 +53,24 @@
                 <p>フォロー数</p>
                 <p>〇〇名</p>
                 </div>
-                <p class="btn"><a href="/follow-List">フォローリスト</a></p>
+                <p class="btn"><a href="/followList">フォローリスト</a></p>
                 <div>
                 <p>フォロワー数</p>
                 <p>〇〇名</p>
                 </div>
-                <p class="btn"><a href="/follower-List">フォロワーリスト</a></p>
+                <p class="btn"><a href="/followerList">フォロワーリスト</a></p>
             </div>
             <p class="btn"><a href="/search">ユーザー検索</a></p>
         </div>
     </div>
     <footer>
     </footer>
-    <script src="JavaScriptファイルのURL"></script>
+    <script>
+    $('.menu-btn').click(function(){
+    $(this).toggleClass('is-open');
+    $(this).siblings('.menu').toggleClass('is-open');
+    });
+    </script>
     <script src="JavaScriptファイルのURL"></script>
 </body>
 </html>
