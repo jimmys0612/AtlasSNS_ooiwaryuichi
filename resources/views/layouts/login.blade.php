@@ -27,12 +27,12 @@
         <h1><a href="/top"><img src="images/Atlas.png"></a></h1>
             <div id="ac-menu">
                 <div id="title-name">
-                    <p id ="name">〇〇さん<img src="images/arrow.png"></p>
+                    <p id ="name">{{session('key')}}さん<img src="images/arrow.png"></p>
                 <div>
                 <button type="button" class="menu-btn">
                     <span class="inn"></span>
                 </button>
-                <nav class="menu">
+                <nav class=><!--classはmenu-->
                 <ul>
                     <li><a href="/top">ホーム</a></li>
                     <li><a href="/profile">プロフィール</a></li>

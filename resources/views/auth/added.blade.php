@@ -3,9 +3,7 @@
 @section('content')
 
 <div id="clear">
-  <p><?php
-  session_start();
-  ?>さん</p>
+  <p>{{session('key')}}さん</p><!--Registerコントローラーで保存したsession関数を表示させる-->
   <p>ようこそ！AtlasSNSへ！</p>
   <p>ユーザー登録が完了しました。</p>
   <p>早速ログインをしてみましょう。</p>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-{!! Form::open() !!}
+{!! Form::open(['Method' => 'post']) !!}
 
 <p>AtlasSNSへようこそ</p>
 

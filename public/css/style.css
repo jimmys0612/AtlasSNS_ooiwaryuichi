@@ -72,7 +72,6 @@ header{
     transition: .3s ease-in-out;
     pointer-events: none;
     transform: translateY(-30px);
-            
     ul {
       border-bottom: 1px solid #000;
       li {
@@ -82,7 +81,7 @@ header{
         align-items: center;
         justify-content: center;
       }
-    }
+    };
   }
    
   .menu.is-open {
@@ -91,5 +90,5 @@ header{
   }
 
   .title-name {
-    text-align: left
-  };
+    text-align: left;
+  }
